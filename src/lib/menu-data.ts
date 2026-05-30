@@ -5,7 +5,7 @@ export type MenuItem = {
   price: number;
   category: "bowls" | "snacks" | "drinks";
   tags: string[];
-  image?: string;
+  image: string;
 };
 
 export const menuItems: MenuItem[] = [
@@ -16,6 +16,8 @@ export const menuItems: MenuItem[] = [
     price: 8.99,
     category: "bowls",
     tags: ["popular", "spicy"],
+    image:
+      "https://images.unsplash.com/photo-1665332195309-9d75071138f0?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "rere-fried-rice",
@@ -24,6 +26,8 @@ export const menuItems: MenuItem[] = [
     price: 8.99,
     category: "bowls",
     tags: ["popular"],
+    image:
+      "https://images.unsplash.com/photo-1603496987674-79600a000f55?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "spaghetti-jollof",
@@ -32,6 +36,8 @@ export const menuItems: MenuItem[] = [
     price: 9.49,
     category: "bowls",
     tags: ["spicy"],
+    image:
+      "https://images.unsplash.com/photo-1664992960082-0ea299a9c53e?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "ofada-ayamase",
@@ -40,6 +46,8 @@ export const menuItems: MenuItem[] = [
     price: 10.99,
     category: "bowls",
     tags: ["premium", "spicy"],
+    image:
+      "https://plus.unsplash.com/premium_photo-1695297516794-8bc77890e35c?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "egusi-kings-combo",
@@ -48,6 +56,8 @@ export const menuItems: MenuItem[] = [
     price: 10.99,
     category: "bowls",
     tags: ["premium"],
+    image:
+      "https://plus.unsplash.com/premium_photo-1664391935474-f1e502d3ad61?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "puff-puff-box",
@@ -56,6 +66,8 @@ export const menuItems: MenuItem[] = [
     price: 3.99,
     category: "snacks",
     tags: ["popular"],
+    image:
+      "https://plus.unsplash.com/premium_photo-1691030658159-e8e29b2b12b9?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "meat-pie",
@@ -64,6 +76,8 @@ export const menuItems: MenuItem[] = [
     price: 2.99,
     category: "snacks",
     tags: [],
+    image:
+      "https://images.unsplash.com/photo-1608039783021-6116a558f0c5?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "chin-chin-cup",
@@ -72,6 +86,8 @@ export const menuItems: MenuItem[] = [
     price: 2.49,
     category: "snacks",
     tags: [],
+    image:
+      "https://plus.unsplash.com/premium_photo-1695558759679-3228d3674cea?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "zobo",
@@ -80,6 +96,8 @@ export const menuItems: MenuItem[] = [
     price: 2.49,
     category: "drinks",
     tags: ["popular"],
+    image:
+      "https://images.unsplash.com/photo-1569058242252-623df46b5025?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "chapman",
@@ -88,6 +106,8 @@ export const menuItems: MenuItem[] = [
     price: 2.99,
     category: "drinks",
     tags: [],
+    image:
+      "https://images.unsplash.com/photo-1557935260-03ada3026d41?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "bottled-water",
@@ -96,6 +116,8 @@ export const menuItems: MenuItem[] = [
     price: 0.99,
     category: "drinks",
     tags: [],
+    image:
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=600&h=400&fit=crop&q=80",
   },
 ];
 
