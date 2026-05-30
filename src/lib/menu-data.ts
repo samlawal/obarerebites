@@ -37,7 +37,7 @@ export const menuItems: MenuItem[] = [
     category: "bowls",
     tags: ["spicy"],
     image:
-      "https://images.unsplash.com/photo-1673442635965-34f1b36d8944?w=600&h=400&fit=crop&q=80",
+      "https://images.pexels.com/photos/14079234/pexels-photo-14079234.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
   },
   {
     id: "suya-chicken-jollof",
