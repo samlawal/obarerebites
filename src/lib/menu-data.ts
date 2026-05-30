@@ -52,14 +52,14 @@ export const menuItems: MenuItem[] = [
       "https://images.unsplash.com/photo-1664992960082-0ea299a9c53e?w=600&h=400&fit=crop&q=80",
   },
   {
-    id: "ofada-ayamase",
-    name: "Ofada Rice & Ayamase",
-    description: "Local ofada rice with spicy green pepper designer stew",
+    id: "rice-ayamase",
+    name: "Rice & Ayamase",
+    description: "White rice with spicy green pepper designer stew & assorted meat",
     price: 10.99,
     category: "bowls",
     tags: ["premium", "spicy"],
     image:
-      "https://images.pexels.com/photos/37648019/pexels-photo-37648019.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop&crop=center",
+      "https://images.pexels.com/photos/633627/pexels-photo-633627.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop&crop=center",
     imageStyle: "scale-110 object-center",
   },
   {
