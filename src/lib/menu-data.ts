@@ -47,6 +47,16 @@ export const menuItems: MenuItem[] = [
     category: "bowls",
     tags: ["spicy"],
     image:
+      "https://images.unsplash.com/photo-1673442635965-34f1b36d8944?w=600&h=400&fit=crop&q=80",
+  },
+  {
+    id: "suya-chicken-jollof",
+    name: "Suya Chicken & Jollof Fire Bowl",
+    description: "Spicy jollof rice with suya-seasoned chicken kebab",
+    price: 9.99,
+    category: "bowls",
+    tags: ["spicy", "popular"],
+    image:
       "https://images.unsplash.com/photo-1664992960082-0ea299a9c53e?w=600&h=400&fit=crop&q=80",
   },
   {
