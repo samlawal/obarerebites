@@ -26,3 +26,41 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.polka-dots {
+  position: relative;
+}
+
+.polka-dots::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle, #E65100 20px, transparent 20px),
+    radial-gradient(circle, #8D6E63 16px, transparent 16px),
+    radial-gradient(circle, #F4A261 12px, transparent 12px),
+    radial-gradient(circle, #A1887F 18px, transparent 18px),
+    radial-gradient(circle, #D84315 14px, transparent 14px),
+    radial-gradient(circle, #6D4C41 11px, transparent 11px);
+  background-size:
+    340px 340px,
+    300px 300px,
+    220px 220px,
+    380px 380px,
+    260px 260px,
+    320px 320px;
+  background-position:
+    25px 35px,
+    160px 190px,
+    90px 270px,
+    260px 70px,
+    310px 210px,
+    55px 150px;
+}
+
+.polka-dots > * {
+  position: relative;
+  z-index: 1;
+}

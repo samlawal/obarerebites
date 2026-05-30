@@ -29,7 +29,7 @@ export default function HomePage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-20 bg-cream">
+      <section className="py-20 bg-cream polka-dots">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-4">
@@ -175,7 +175,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-cream">
+      <section className="py-20 bg-cream polka-dots">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12">
