@@ -59,8 +59,8 @@ export const menuItems: MenuItem[] = [
     category: "bowls",
     tags: ["premium", "spicy"],
     image:
-      "https://images.pexels.com/photos/633627/pexels-photo-633627.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop&crop=center",
-    imageStyle: "scale-110 object-center",
+      "https://images.pexels.com/photos/17952746/pexels-photo-17952746.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop&crop=center",
+    imageStyle: "scale-105 object-center",
   },
   {
     id: "queen-esther-fish",
