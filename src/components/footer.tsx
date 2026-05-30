@@ -51,8 +51,17 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-8 pt-8 text-center text-sm text-white/50">
-          &copy; {new Date().getFullYear()} Oba Rere Bites. All rights reserved.
+        <div className="border-t border-white/10 mt-8 pt-8 text-center text-sm text-white/50 space-y-2">
+          <p>
+            &copy; {new Date().getFullYear()} Oba Rere Bites. All rights reserved.
+            {" | "}
+            <Link href="/terms" className="hover:text-plantain transition-colors underline">
+              Terms &amp; Conditions
+            </Link>
+          </p>
+          <p className="text-xs text-white/30">
+            All food images are for illustrative purposes only and may not represent the exact product.
+          </p>
         </div>
       </div>
     </footer>
