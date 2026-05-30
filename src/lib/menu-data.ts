@@ -10,16 +10,6 @@ export type MenuItem = {
 
 export const menuItems: MenuItem[] = [
   {
-    id: "esther-grilled-fish",
-    name: "Esther Grilled Fish Delight",
-    description: "Grilled chicken, plantain, signature spice",
-    price: 8.99,
-    category: "bowls",
-    tags: ["popular", "spicy"],
-    image:
-      "https://images.unsplash.com/photo-1665332195309-9d75071138f0?w=600&h=400&fit=crop&q=80",
-  },
-  {
     id: "oba-jollof-grilled",
     name: "Oba Jollof & Grilled Bowl",
     description: "Smoky jollof rice with grilled meats",
@@ -68,6 +58,16 @@ export const menuItems: MenuItem[] = [
     tags: ["premium", "spicy"],
     image:
       "https://images.unsplash.com/photo-1665332561290-cc6757172890?w=600&h=400&fit=crop&q=80",
+  },
+  {
+    id: "queen-esther-fish",
+    name: "Queen Esther's Fish Royale",
+    description: "Whole grilled fish, peppered sauce, plantain & jollof — the ultimate treat",
+    price: 17.99,
+    category: "bowls",
+    tags: ["premium"],
+    image:
+      "https://images.unsplash.com/photo-1665332195309-9d75071138f0?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "egusi-kings-combo",
