@@ -47,7 +47,7 @@ export const menuItems: MenuItem[] = [
     category: "bowls",
     tags: ["premium", "spicy"],
     image:
-      "https://plus.unsplash.com/premium_photo-1695297516794-8bc77890e35c?w=600&h=400&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1665332561290-cc6757172890?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "egusi-kings-combo",
@@ -57,7 +57,7 @@ export const menuItems: MenuItem[] = [
     category: "bowls",
     tags: ["premium"],
     image:
-      "https://plus.unsplash.com/premium_photo-1664391935474-f1e502d3ad61?w=600&h=400&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "puff-puff-box",
@@ -67,7 +67,7 @@ export const menuItems: MenuItem[] = [
     category: "snacks",
     tags: ["popular"],
     image:
-      "https://plus.unsplash.com/premium_photo-1691030658159-e8e29b2b12b9?w=600&h=400&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1582461182977-0e61ebb79c87?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "meat-pie",
@@ -87,7 +87,7 @@ export const menuItems: MenuItem[] = [
     category: "snacks",
     tags: [],
     image:
-      "https://plus.unsplash.com/premium_photo-1695558759679-3228d3674cea?w=600&h=400&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1756652242630-5a90c89a99cd?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "zobo",
