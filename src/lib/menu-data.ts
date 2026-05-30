@@ -97,7 +97,7 @@ export const menuItems: MenuItem[] = [
     category: "drinks",
     tags: ["popular"],
     image:
-      "https://images.unsplash.com/photo-1569058242252-623df46b5025?w=600&h=400&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1593624191635-f1a49f5eca76?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "chapman",
