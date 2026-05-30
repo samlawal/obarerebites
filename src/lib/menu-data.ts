@@ -27,7 +27,7 @@ export const menuItems: MenuItem[] = [
     category: "bowls",
     tags: ["popular"],
     image:
-      "https://images.unsplash.com/photo-1551326844-4df70f78d0e9?w=600&h=400&fit=crop&q=80",
+      "https://images.pexels.com/photos/34683315/pexels-photo-34683315.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
   },
   {
     id: "spaghetti-jollof",
