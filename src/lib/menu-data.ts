@@ -83,6 +83,17 @@ export const menuItems: MenuItem[] = [
       "https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=600&h=400&fit=crop&q=80",
   },
   {
+    id: "dodo-plantain",
+    name: "Dodo (Fried Plantain)",
+    description: "Sweet ripe plantain fried golden — the ultimate Naija side dish",
+    price: 2.99,
+    category: "snacks",
+    tags: ["popular"],
+    image:
+      "https://images.pexels.com/photos/12362298/pexels-photo-12362298.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop&crop=center",
+    imageStyle: "scale-110 object-center",
+  },
+  {
     id: "tobi-puff-puff",
     name: "Tobi's Puff Puff Box",
     description: "Golden fried dough balls, lightly sugared & irresistible",
