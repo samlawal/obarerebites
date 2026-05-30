@@ -10,12 +10,12 @@ export default function MenuCard({ item }: { item: MenuItem }) {
 
   return (
     <div className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
-      <div className="relative h-48 w-full">
+      <div className="relative h-48 w-full overflow-hidden">
         <Image
           src={item.image}
           alt={item.name}
           fill
-          className="object-cover"
+          className={`object-cover ${item.imageStyle || ""}`}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
         {item.tags.includes("spicy") && (

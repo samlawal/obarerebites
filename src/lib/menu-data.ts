@@ -6,6 +6,7 @@ export type MenuItem = {
   category: "bowls" | "snacks" | "drinks";
   tags: string[];
   image: string;
+  imageStyle?: string;
 };
 
 export const menuItems: MenuItem[] = [
@@ -27,7 +28,8 @@ export const menuItems: MenuItem[] = [
     category: "bowls",
     tags: ["popular"],
     image:
-      "https://images.pexels.com/photos/34683315/pexels-photo-34683315.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop&crop=center",
+      "https://images.pexels.com/photos/34683315/pexels-photo-34683315.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop&crop=center",
+    imageStyle: "scale-125 object-[center_30%]",
   },
   {
     id: "spaghetti-jollof",
@@ -57,7 +59,8 @@ export const menuItems: MenuItem[] = [
     category: "bowls",
     tags: ["premium", "spicy"],
     image:
-      "https://images.unsplash.com/photo-1665332561290-cc6757172890?w=600&h=400&fit=crop&q=80",
+      "https://images.pexels.com/photos/37648019/pexels-photo-37648019.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop&crop=center",
+    imageStyle: "scale-110 object-center",
   },
   {
     id: "queen-esther-fish",
