@@ -10,8 +10,8 @@ export type MenuItem = {
 
 export const menuItems: MenuItem[] = [
   {
-    id: "oba-jollof-bowl",
-    name: "Oba Jollof Bowl",
+    id: "esther-grilled-fish",
+    name: "Esther Grilled Fish Delight",
     description: "Grilled chicken, plantain, signature spice",
     price: 8.99,
     category: "bowls",
@@ -20,14 +20,24 @@ export const menuItems: MenuItem[] = [
       "https://images.unsplash.com/photo-1665332195309-9d75071138f0?w=600&h=400&fit=crop&q=80",
   },
   {
+    id: "oba-jollof-grilled",
+    name: "Oba Jollof & Grilled Bowl",
+    description: "Smoky jollof rice with grilled meats",
+    price: 9.49,
+    category: "bowls",
+    tags: ["popular", "spicy"],
+    image:
+      "https://images.unsplash.com/photo-1603496987674-79600a000f55?w=600&h=400&fit=crop&q=80",
+  },
+  {
     id: "rere-fried-rice",
     name: "Rere Fried Rice Supreme",
-    description: "Colourful veg, peppered beef",
+    description: "Colourful veg, peppered beef, prawns on top",
     price: 8.99,
     category: "bowls",
     tags: ["popular"],
     image:
-      "https://images.unsplash.com/photo-1603496987674-79600a000f55?w=600&h=400&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1551326844-4df70f78d0e9?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "spaghetti-jollof",
@@ -60,8 +70,8 @@ export const menuItems: MenuItem[] = [
       "https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=600&h=400&fit=crop&q=80",
   },
   {
-    id: "puff-puff-box",
-    name: "Puff-Puff Box",
+    id: "tobis-puff-puff",
+    name: "Tobis Puff Puff Box",
     description: "Golden fried dough balls, lightly dusted",
     price: 3.99,
     category: "snacks",
