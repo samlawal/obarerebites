@@ -28,8 +28,8 @@ export const menuItems: MenuItem[] = [
     category: "bowls",
     tags: ["popular"],
     image:
-      "https://images.pexels.com/photos/34683315/pexels-photo-34683315.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop&crop=center",
-    imageStyle: "scale-125 object-[center_30%]",
+      "https://images.pexels.com/photos/34683317/pexels-photo-34683317.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop&crop=center",
+    imageStyle: "scale-110 object-center",
   },
   {
     id: "spaghetti-jollof",
