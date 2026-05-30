@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { ShoppingBag, Menu, X } from "lucide-react";
 import { useCart } from "@/lib/cart-context";
+import Logo from "./logo";
 
 export default function Navbar() {
   const { totalItems } = useCart();
@@ -21,9 +22,8 @@ export default function Navbar() {
     <nav className="bg-charcoal text-white sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-            <span className="text-plantain">Oba Rere</span>
-            <span className="text-jollof">Bites</span>
+          <Link href="/" className="flex items-center">
+            <Logo className="h-8 w-auto sm:h-9" />
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
