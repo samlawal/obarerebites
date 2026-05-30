@@ -35,13 +35,13 @@ html {
   content: "";
   position: absolute;
   inset: 0;
-  opacity: 0.4;
+  opacity: 0.55;
   pointer-events: none;
   background-image:
-    radial-gradient(circle, #E65100 22px, transparent 22px),
-    radial-gradient(circle, #8D6E63 18px, transparent 18px),
-    radial-gradient(circle, #F4A261 15px, transparent 15px),
-    radial-gradient(circle, #6D4C41 20px, transparent 20px);
+    radial-gradient(circle, #E65100 45px, transparent 45px),
+    radial-gradient(circle, #8D6E63 38px, transparent 38px),
+    radial-gradient(circle, #F4A261 32px, transparent 32px),
+    radial-gradient(circle, #6D4C41 42px, transparent 42px);
   background-size:
     900px 700px,
     750px 850px,
