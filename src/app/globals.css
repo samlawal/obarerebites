@@ -38,20 +38,40 @@ html {
   opacity: 0.55;
   pointer-events: none;
   background-image:
-    radial-gradient(circle, #E65100 45px, transparent 45px),
-    radial-gradient(circle, #8D6E63 38px, transparent 38px),
-    radial-gradient(circle, #F4A261 32px, transparent 32px),
-    radial-gradient(circle, #6D4C41 42px, transparent 42px);
+    radial-gradient(circle, #E65100 20px, transparent 20px),
+    radial-gradient(circle, #8D6E63 16px, transparent 16px),
+    radial-gradient(circle, #F4A261 14px, transparent 14px),
+    radial-gradient(circle, #6D4C41 18px, transparent 18px);
   background-size:
-    900px 700px,
-    750px 850px,
-    1100px 600px,
-    850px 950px;
+    500px 500px,
+    420px 550px,
+    600px 400px,
+    480px 600px;
   background-position:
-    40px 30px,
-    400px 200px,
-    650px 80px,
-    200px 400px;
+    30px 25px,
+    250px 150px,
+    350px 60px,
+    120px 300px;
+}
+
+@media (min-width: 768px) {
+  .polka-dots::before {
+    background-image:
+      radial-gradient(circle, #E65100 45px, transparent 45px),
+      radial-gradient(circle, #8D6E63 38px, transparent 38px),
+      radial-gradient(circle, #F4A261 32px, transparent 32px),
+      radial-gradient(circle, #6D4C41 42px, transparent 42px);
+    background-size:
+      900px 700px,
+      750px 850px,
+      1100px 600px,
+      850px 950px;
+    background-position:
+      40px 30px,
+      400px 200px,
+      650px 80px,
+      200px 400px;
+  }
 }
 
 .polka-dots > * {

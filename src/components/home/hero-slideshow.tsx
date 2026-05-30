@@ -10,20 +10,23 @@ const slides = [
   {
     image:
       "https://images.unsplash.com/photo-1665332195309-9d75071138f0?w=1400&h=800&fit=crop&q=80",
-    title: "Royal Naija Goodness",
+    line1: "Royal Naija",
+    line2: "Goodness",
     subtitle: "Bold jollof. Smoky suya. Delivered fast to Portsmouth students.",
   },
   {
     image:
       "https://images.unsplash.com/photo-1603496987674-79600a000f55?w=1400&h=800&fit=crop&q=80",
-    title: "Afro-Fusion Flavours",
+    line1: "Afro-Fusion",
+    line2: "Flavours",
     subtitle:
       "Traditional recipes with a modern twist — taste Nigeria on every plate.",
   },
   {
     image:
       "https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=1400&h=800&fit=crop&q=80",
-    title: "Feast Like Royalty",
+    line1: "Feast Like",
+    line2: "Royalty",
     subtitle:
       "From egusi to puff-puff, every dish is cooked with love and spice.",
   },
@@ -42,7 +45,7 @@ export default function HeroSlideshow() {
   }, [next]);
 
   return (
-    <section className="relative h-[90vh] min-h-[600px] max-h-[800px] overflow-hidden bg-charcoal">
+    <section className="relative h-[70vh] min-h-[500px] md:h-[85vh] md:min-h-[600px] max-h-[800px] overflow-hidden bg-charcoal">
       {/* Background images */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -55,18 +58,18 @@ export default function HeroSlideshow() {
         >
           <Image
             src={slides[current].image}
-            alt={slides[current].title}
+            alt={slides[current].line1}
             fill
             className="object-cover"
             priority={current === 0}
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/60 to-charcoal/30" />
+          <div className="absolute inset-0 bg-charcoal/75 sm:bg-charcoal/60 md:bg-transparent md:bg-gradient-to-r md:from-charcoal/90 md:via-charcoal/60 md:to-charcoal/30" />
         </motion.div>
       </AnimatePresence>
 
-      {/* Floating food elements */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+      {/* Floating food elements — hidden on mobile */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden hidden md:block">
         {["🍛", "🔥", "🍗", "👑", "🌶️"].map((emoji, i) => (
           <motion.div
             key={emoji}
@@ -92,13 +95,13 @@ export default function HeroSlideshow() {
       </div>
 
       {/* Content */}
-      <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
-        <div className="max-w-2xl">
+      <div className="relative z-10 h-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 flex items-center">
+        <div className="max-w-2xl w-full">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="inline-block bg-jollof/20 backdrop-blur-sm text-jollof px-4 py-1.5 rounded-full text-sm font-semibold mb-6 border border-jollof/30"
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className="inline-block bg-jollof/20 backdrop-blur-sm text-jollof px-3 py-1 md:px-4 md:py-1.5 rounded-full text-xs md:text-sm font-semibold mb-4 md:mb-6 border border-jollof/30"
           >
             Now delivering in Portsmouth
           </motion.div>
@@ -106,31 +109,17 @@ export default function HeroSlideshow() {
           <AnimatePresence mode="wait">
             <motion.div
               key={current}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.6 }}
+              exit={{ opacity: 0, y: -15 }}
+              transition={{ duration: 0.5 }}
             >
-              <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6 text-white">
-                {slides[current].title.split(" ").map((word, i) => (
-                  <motion.span
-                    key={`${current}-${i}`}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.1 * i + 0.2 }}
-                    className={`inline-block mr-3 ${
-                      i === 0
-                        ? "text-plantain"
-                        : i === slides[current].title.split(" ").length - 1
-                        ? "text-jollof"
-                        : ""
-                    }`}
-                  >
-                    {word}
-                  </motion.span>
-                ))}
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight mb-3 md:mb-6">
+                <span className="text-plantain">{slides[current].line1}</span>
+                <br />
+                <span className="text-jollof">{slides[current].line2}</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/80 mb-8 leading-relaxed max-w-lg">
+              <p className="text-sm sm:text-base md:text-xl text-white/80 mb-6 md:mb-8 leading-relaxed max-w-lg">
                 {slides[current].subtitle}
               </p>
             </motion.div>
@@ -139,19 +128,19 @@ export default function HeroSlideshow() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8 }}
-            className="flex flex-wrap gap-4"
+            transition={{ delay: 0.6, duration: 0.5 }}
+            className="flex flex-col sm:flex-row gap-3"
           >
             <Link
               href="/menu"
-              className="group bg-jollof hover:bg-jollof-dark text-white font-bold px-8 py-4 rounded-lg text-lg flex items-center gap-2 transition-all hover:scale-105 hover:shadow-lg hover:shadow-jollof/30"
+              className="group bg-jollof hover:bg-jollof-dark text-white font-bold px-6 py-3 md:px-8 md:py-4 rounded-lg text-base md:text-lg flex items-center justify-center gap-2 transition-all hover:scale-105 hover:shadow-lg hover:shadow-jollof/30"
             >
               Order Now
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
               href="/party-orders"
-              className="border-2 border-plantain text-plantain hover:bg-plantain hover:text-charcoal font-bold px-8 py-4 rounded-lg text-lg transition-all hover:scale-105"
+              className="border-2 border-plantain text-plantain hover:bg-plantain hover:text-charcoal font-bold px-6 py-3 md:px-8 md:py-4 rounded-lg text-base md:text-lg transition-all hover:scale-105 text-center"
             >
               Party Orders
             </Link>
@@ -160,7 +149,7 @@ export default function HeroSlideshow() {
       </div>
 
       {/* Slide indicators */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
+      <div className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-10">
         {slides.map((_, i) => (
           <button
             key={i}
