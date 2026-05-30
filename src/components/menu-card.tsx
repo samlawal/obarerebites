@@ -3,19 +3,24 @@
 import Image from "next/image";
 import { Plus, Flame } from "lucide-react";
 import { useCart } from "@/lib/cart-context";
+import { useCustomImages } from "@/lib/use-custom-images";
 import type { MenuItem } from "@/lib/menu-data";
 
 export default function MenuCard({ item }: { item: MenuItem }) {
   const { addItem } = useCart();
+  const customImages = useCustomImages();
+  const customUrl = customImages[item.id];
+  const imageSrc = customUrl || item.image;
+  const imageClass = customUrl ? "object-cover" : `object-cover ${item.imageStyle || ""}`;
 
   return (
     <div className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
       <div className="relative h-48 w-full overflow-hidden">
         <Image
-          src={item.image}
+          src={imageSrc}
           alt={item.name}
           fill
-          className={`object-cover ${item.imageStyle || ""}`}
+          className={imageClass}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
         {item.tags.includes("spicy") && (
