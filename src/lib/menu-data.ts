@@ -27,9 +27,7 @@ export const menuItems: MenuItem[] = [
     price: 8.99,
     category: "bowls",
     tags: ["popular"],
-    image:
-      "https://images.pexels.com/photos/34683317/pexels-photo-34683317.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop&crop=center",
-    imageStyle: "scale-110 object-center",
+    image: "/Rere's Fried Rice with Prawns.jpeg",
   },
   {
     id: "spaghetti-jollof",
