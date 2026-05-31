@@ -58,9 +58,7 @@ export const menuItems: MenuItem[] = [
     price: 10.99,
     category: "bowls",
     tags: ["premium", "spicy"],
-    image:
-      "https://images.unsplash.com/photo-1665332561290-cc6757172890?w=600&h=400&fit=crop&q=80",
-    imageStyle: "scale-150 object-[35%_center]",
+    image: "/Rice and Ayamase.jpeg",
   },
   {
     id: "queen-esther-fish",
